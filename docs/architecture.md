@@ -37,4 +37,3 @@ The pipeline definition and custom deal-key property are retained.
 ## Release boundary
 
 This repository excludes portal IDs, owner IDs, service keys, provider receipts and real contact details. The controlled examples use non-routable domains.
-

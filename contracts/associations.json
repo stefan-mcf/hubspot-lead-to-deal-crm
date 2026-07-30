@@ -22,4 +22,3 @@
   "write_order": ["company", "contact", "deal", "associations"],
   "rerun_result": "matched_existing"
 }
-

@@ -81,4 +81,3 @@ docs/         data admission and cleanup design
 ```
 
 [CRM architecture and lifecycle](docs/architecture.md)
-

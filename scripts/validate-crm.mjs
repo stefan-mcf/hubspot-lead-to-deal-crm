@@ -39,4 +39,3 @@ for (const record of dataset.records) {
 }
 
 console.log("HubSpot CRM contracts are valid.");
-
