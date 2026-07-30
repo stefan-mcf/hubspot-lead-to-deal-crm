@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "classification": "synthetic",
+  "records": [
+    {
+      "company": {
+        "company_external_id": "CO-001",
+        "name": "Northstar Property Care",
+        "domain": "northstar-property.invalid"
+      },
+      "contact": {
+        "contact_external_id": "CT-001",
+        "first_name": "Casey",
+        "last_name": "Rowan",
+        "email": "casey@northstar-property.invalid"
+      },
+      "deal": {
+        "sm_systems_deal_id": "DL-001",
+        "name": "Website lead recovery audit",
+        "stage": "qualified"
+      },
+      "associations": [
+        ["company", "contact"],
+        ["company", "deal"],
+        ["contact", "deal"]
+      ],
+      "first_run": "created",
+      "second_run": "matched_existing"
+    },
+    {
+      "company": {
+        "company_external_id": "CO-002",
+        "name": "Harbour Trade Services",
+        "domain": "harbour-trade.invalid"
+      },
+      "contact": {
+        "contact_external_id": "CT-002",
+        "first_name": "Morgan",
+        "last_name": "Lee",
+        "email": "morgan@harbour-trade.invalid"
+      },
+      "deal": {
+        "sm_systems_deal_id": "DL-002",
+        "name": "CRM workflow audit",
+        "stage": "audit_booked"
+      },
+      "associations": [
+        ["company", "contact"],
+        ["company", "deal"],
+        ["contact", "deal"]
+      ],
+      "first_run": "created",
+      "second_run": "matched_existing"
+    },
+    {
+      "company": {
+        "company_external_id": "CO-003",
+        "name": "Southern Agency Partners",
+        "domain": "southern-agency.invalid"
+      },
+      "contact": {
+        "contact_external_id": "CT-003",
+        "first_name": "Jamie",
+        "last_name": "Patel",
+        "email": "jamie@southern-agency.invalid"
+      },
+      "deal": {
+        "sm_systems_deal_id": "DL-003",
+        "name": "Automation delivery support",
+        "stage": "proposal_prepared"
+      },
+      "associations": [
+        ["company", "contact"],
+        ["company", "deal"],
+        ["contact", "deal"]
+      ],
+      "first_run": "created",
+      "second_run": "matched_existing"
+    }
+  ]
+}
+

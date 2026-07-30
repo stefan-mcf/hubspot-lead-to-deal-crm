@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "label": "SM Systems Lead-to-Deal",
+  "object_type": "deal",
+  "stages": [
+    {
+      "order": 1,
+      "key": "active_replied",
+      "label": "Active / Replied",
+      "closed": false
+    },
+    {
+      "order": 2,
+      "key": "qualified",
+      "label": "Qualified",
+      "closed": false
+    },
+    {
+      "order": 3,
+      "key": "audit_booked",
+      "label": "Audit Booked",
+      "closed": false
+    },
+    {
+      "order": 4,
+      "key": "proposal_requested",
+      "label": "Proposal Requested",
+      "closed": false
+    },
+    {
+      "order": 5,
+      "key": "proposal_prepared",
+      "label": "Proposal Prepared",
+      "closed": false
+    },
+    {
+      "order": 6,
+      "key": "won",
+      "label": "Won",
+      "closed": true
+    },
+    {
+      "order": 7,
+      "key": "lost",
+      "label": "Lost",
+      "closed": true
+    }
+  ]
+}
+

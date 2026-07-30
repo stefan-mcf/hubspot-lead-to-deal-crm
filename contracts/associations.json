@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "objects": [
+    {
+      "type": "company",
+      "external_key": "company_external_id"
+    },
+    {
+      "type": "contact",
+      "external_key": "contact_external_id"
+    },
+    {
+      "type": "deal",
+      "external_key": "sm_systems_deal_id"
+    }
+  ],
+  "required_edges": [
+    ["company", "contact"],
+    ["company", "deal"],
+    ["contact", "deal"]
+  ],
+  "write_order": ["company", "contact", "deal", "associations"],
+  "rerun_result": "matched_existing"
+}
+
