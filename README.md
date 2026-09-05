@@ -6,7 +6,7 @@ The design keeps early acquisition records outside HubSpot until there is a clea
 
 | | |
 | --- | --- |
-| Status | Implemented and provider-validated |
+| Status | Internal CRM implementation; controlled records verified and archived after commissioning |
 | Role | CRM architecture, data contracts, pipeline configuration and lifecycle controls |
 | Stack | HubSpot CRM, REST API, JSON contracts |
 | Project page | [smsystems.au/work/hubspot-lead-to-deal-crm](https://smsystems.au/work/hubspot-lead-to-deal-crm/) |
