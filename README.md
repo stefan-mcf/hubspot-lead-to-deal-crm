@@ -4,14 +4,17 @@ A HubSpot implementation for controlled lead admission, linked company/contact/d
 
 The design keeps early acquisition records outside HubSpot until there is a clear relationship to manage. Admitted records receive stable external keys so a repeated import matches the existing CRM object instead of creating another one.
 
-| | |
-| --- | --- |
-| Status | Internal CRM implementation; controlled records verified and archived after commissioning |
-| Role | CRM architecture, data contracts, pipeline configuration and lifecycle controls |
-| Stack | HubSpot CRM, REST API, JSON contracts |
-| Project page | [smsystems.au/work/hubspot-lead-to-deal-crm](https://smsystems.au/work/hubspot-lead-to-deal-crm/) |
+**Status:** Internal CRM implementation; controlled commissioning records were verified and then archived.
 
-## CRM model
+**My contribution:** CRM architecture, data contracts, pipeline configuration and lifecycle controls.
+
+![Linked HubSpot records](assets/03-hubspot-deal-associations.png)
+
+*Retained project view. The [evidence index](docs/evidence.md) contains the full published sequence and its historical context.*
+
+## How it works
+
+### CRM model
 
 ```text
 owner-approved lead
@@ -38,9 +41,7 @@ Every admitted relationship is represented by three native CRM objects with expl
 
 The custom deal key remains stable across retries and can be used to reconcile an external operating system with HubSpot.
 
-![Linked HubSpot records](assets/03-hubspot-deal-associations.png)
-
-## Pipeline
+### Pipeline
 
 | Stage | Purpose |
 | --- | --- |
@@ -52,25 +53,13 @@ The custom deal key remains stable across retries and can be used to reconcile a
 | Won | Work has been accepted |
 | Lost | The opportunity is closed without delivery |
 
-![HubSpot lead-to-deal pipeline](assets/01-hubspot-deal-pipeline.png)
-
-## Lifecycle controls
+### Lifecycle controls
 
 Three controlled relationship sets were used to commission the object model and stage map. The provider readback confirmed all company, contact and deal associations. A second run matched every object through the stable keys.
 
 The temporary commissioning records were then archived through an exact manifest, leaving the configured pipeline and deal-key property ready for real owner-approved relationships.
 
-![Deal stage history](assets/02-hubspot-deal-stage-history.png)
-
-## Validate the public contracts
-
-```bash
-npm run validate
-```
-
-The validator checks stage order, unique object keys, complete association edges and idempotent rerun expectations.
-
-## Repository contents
+## Implementation
 
 ```text
 assets/       selected HubSpot screens
@@ -81,3 +70,21 @@ docs/         data admission and cleanup design
 ```
 
 [CRM architecture and lifecycle](docs/architecture.md)
+
+## Validation
+
+```bash
+npm run validate
+```
+
+The validator checks stage order, unique object keys, complete association edges and idempotent rerun expectations.
+
+## Scope and current state
+
+Public contents describe contracts and controlled examples. Provider readback and cleanup refer to the recorded commissioning; this package does not publish private CRM data or claim sales performance.
+
+## Documentation
+
+- [CRM architecture and lifecycle](docs/architecture.md)
+- [Evidence index](docs/evidence.md)
+- [smsystems.au/work/hubspot-lead-to-deal-crm](https://smsystems.au/work/hubspot-lead-to-deal-crm/)
