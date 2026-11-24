@@ -8,9 +8,11 @@ The design keeps early acquisition records outside HubSpot until there is a clea
 
 **My contribution:** CRM architecture, data contracts, pipeline configuration and lifecycle controls.
 
-![Linked HubSpot records](assets/03-hubspot-deal-associations.png)
+## A second import matches the same CRM records
 
-*Retained project view. The [evidence index](docs/evidence.md) contains the full published sequence and its historical context.*
+Each admitted relationship has a company, contact and deal, with an explicit link between each pair. In [controlled commissioning](examples/commissioning-records.json), HubSpot readback verified those associations for three relationship sets. A second run matched each object by its stable key. The test records were archived afterwards.
+
+See the [retained associations capture](assets/03-hubspot-deal-associations.png) and the separate [Zendesk handoff](https://github.com/stefan-mcf/hubspot-zendesk-customer-handoff) for what happens once a deal is approved for onboarding.
 
 ## How it works
 
